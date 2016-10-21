@@ -1,3 +1,4 @@
+// General Javascript
 $(document).ready(function() {
 
 	/* Full Page Plugin Settings */
