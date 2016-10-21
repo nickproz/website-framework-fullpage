@@ -1,0 +1,25 @@
+{
+  "name": "nicks-websites",
+  "version": "1.0.0",
+  "homepage": "https://www.nickproz.com",
+  "authors": [
+    "nickproz <nick.prozorovsky@gmail.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "jquery-ui": "latest",
+	"bootstrap": "latest",
+	"slick-carousel": "latest",
+	"Hover": "latest",
+	"fontawesome": "latest",
+	"fullpage": "latest"
+  }
+}
