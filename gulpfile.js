@@ -19,7 +19,7 @@ gulp.task('clean-scripts', function () {
 gulp.task('js', ['clean-scripts'], function() {
   gulp.src('source_js/*.js')
     .pipe(concat('script.js'))
-    //.pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest('public/js/'));
 });
 
