@@ -14,7 +14,7 @@ Below are standard media breakpoints. Always use mobile-first media queries,
 as you should be designing mobile-first. If a mobile-first approach can not
 be used for whatever reason, max-width queries are also listed below.
 
-example (usage): @media break-tablet-portrait {}
+example (usage): @include for-desktop-up { background-color: red; }
 
 ------------------------------------------
 |               Breakpoints              |
@@ -24,11 +24,6 @@ example (usage): @media break-tablet-portrait {}
 ---------------------------------------------------------
 |               Mobile-first Media Queries              |
 ---------------------------------------------------------
-*/
-/*
------------------------------------------------------------------------
-|               Max-width Breakpoints (Non-mobile First)              |
------------------------------------------------------------------------
 */
 /*
 -------------------------------------------------------------------------
@@ -163,7 +158,8 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  font-size: 10px; }
+  font-size: 12px;
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15); }
   .navigation .nav-link-container {
     list-style-type: none;
     display: inline-block;
@@ -173,13 +169,14 @@ body {
     -moz-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    flex-grow: 1; }
+    flex-grow: 1;
+    overflow-x: hidden;
+    overflow-y: hidden; }
   .navigation .nav-link {
     text-decoration: none;
     display: inline-block;
-    padding: 0 20px; }
+    padding: 0 20px;
+    font-weight: bold; }
   @media only screen and (min-width: 768px) {
-    .navigation {
-      font-size: 14px; }
-      .navigation .nav-link-container {
-        flex-grow: 0; } }
+    .navigation .nav-link-container {
+      flex-grow: 0; } }
