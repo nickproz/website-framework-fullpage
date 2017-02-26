@@ -1,0 +1,15 @@
+/*
+All mixins are stored here.
+
+example (usage): @include vertical-center();
+
+--------------------------------------------
+|               General Mixins             |
+--------------------------------------------
+*/
+// Transition
+@mixin transition($seconds) {
+    -moz-transition:    all $seconds;
+    -webkit-transition: all $seconds;
+    transition:         all $seconds;
+}

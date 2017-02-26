@@ -5,21 +5,10 @@
   "authors": [
     "nickproz <nick.prozorovsky@gmail.com>"
   ],
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "public/lib",
-    "test",
-    "tests"
-  ],
   "dependencies": {
-    "jquery": "latest",
-    "jquery-ui": "latest",
-	"bootstrap": "latest",
-	"slick-carousel": "latest",
-	"Hover": "latest",
-	"fontawesome": "latest",
-	"fullpage": "latest"
+    "jquery": "^3.1.1",
+    "hover": "Hover#^2.1.0",
+    "fullpage.js": "fullpage#^2.9.2",
+    "font-awesome": "fontawesome#^4.7.0"
   }
 }
