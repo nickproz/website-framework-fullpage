@@ -7,18 +7,20 @@
   ],
   "scripts": {
     "start": "gulp",
-    "build": "gulp sass && gulp js"
+    "build": "gulp sass && gulp js",
+    "pretty": "prettier --print-width 150 --tab-width 4 --arrow-parens always --single-quote --write \"src/**\""
   },
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
-    "gulp-concat": "^2.6.0",
     "gulp-clean": "^0.3.2",
     "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.0",
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^1.5.4",
     "gulp-util": "~3.0.8",
-    "gulp-webserver": "^0.9.1"
+    "gulp-webserver": "^0.9.1",
+    "prettier": "^1.14.2"
   }
 }

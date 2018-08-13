@@ -62,5 +62,11 @@
     }
 }
 .blue-white-theme {
-    @include theme-navigation($color-grayLight--navbar, $color-bluePale--navbar, $color-bluePale--navbar, $color-grayLight--navbar, darken($color-grayLight--navbar, 5%));
+    @include theme-navigation(
+        $color-grayLight--navbar,
+        $color-bluePale--navbar,
+        $color-bluePale--navbar,
+        $color-grayLight--navbar,
+        darken($color-grayLight--navbar, 5%)
+    );
 }

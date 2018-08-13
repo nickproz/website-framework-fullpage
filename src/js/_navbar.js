@@ -27,7 +27,7 @@ $(document).ready(function() {
      */
     var resetHash = function() {
         var hash = window.location.hash;
-        if(hash === '' || navLinks.indexOf(hash) === -1) {
+        if (hash === '' || navLinks.indexOf(hash) === -1) {
             window.location.hash = 'home';
         }
     };
@@ -45,12 +45,14 @@ $(document).ready(function() {
      * Updates the active link in our menu. Finds the <a> tag corresponding to the hash and adds the active class to its parent.
      */
     var updateNavActiveItem = function(hash) {
-        if(navLinks.indexOf(hash) >= 0) {
+        if (navLinks.indexOf(hash) >= 0) {
             $navLink.removeClass(activeNavLinkClass);
             var linkQuery = "a[href='" + hash + "']";
-            $(linkQuery).parent().addClass(activeNavLinkClass);
+            $(linkQuery)
+                .parent()
+                .addClass(activeNavLinkClass);
         }
-    }
+    };
 
     /**
      * Listener for a hash change, updates our menu.
@@ -79,10 +81,10 @@ $(document).ready(function() {
         anchors: ['home', 'about', 'experience', 'skills', 'contact'],
         menu: '#menu',
         fixedElements: '',
-        verticalCentered: true
+        verticalCentered: true,
         // Comment the following two lines out for auto scroll to be disabled
-        ,autoScrolling: false,
-        onLeave: function(index, nextIndex){
+        autoScrolling: false,
+        onLeave: function(index, nextIndex) {
             updateMenu(nextIndex);
         }
     });

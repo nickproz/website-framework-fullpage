@@ -4,7 +4,6 @@
 ---------------------------------------------
 */
 #fullpage {
-
     .section:nth-child(even) {
         background-color: #404040;
     }
@@ -18,7 +17,8 @@
     }
 }
 
-html, body {
+html,
+body {
     font-family: $font-family--site;
 }
 

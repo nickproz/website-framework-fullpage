@@ -9,7 +9,7 @@ example (usage): @include vertical-center();
 */
 // Transition
 @mixin transition($seconds) {
-    -moz-transition:    all $seconds;
+    -moz-transition: all $seconds;
     -webkit-transition: all $seconds;
-    transition:         all $seconds;
+    transition: all $seconds;
 }
